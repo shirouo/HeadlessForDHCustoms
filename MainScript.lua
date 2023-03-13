@@ -28,7 +28,12 @@ for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) d
 
 -- My watermark or wtv the fuck lole.
 Headless:AddButton("MADE BY SHIROU", "shirou#1077, you cant add me.", function()
-print("lol")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+Title = "Shirou";
+Text = "hehe";
+Icon = "rbxassetid://12624498811";
+Duration = 5
+})
 end)
 
 -- The good stuff
