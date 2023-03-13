@@ -68,12 +68,10 @@ wait(5)
 game.Players.LocalPlayer.Character.Head.Transparency = getgenv().HeadTransparency
 end)
  
-if game.Players.LocalPlayer.UserId == 85059658 then
-Headless:AddButton("client sided headless", "yes", function()
+Headless:AddButton("Client sided headless", "Works on every game.", function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
 game.Players.LocalPlayer.Character.Head.MeshId = "rbxassetid://6686307858"
 end)
-end
 
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(dbb)
 if string.lower(dbb)==getgenv().GuiToggleKey then if game:GetService("CoreGui").ShirousHub.Frame.Visible==true then game:GetService("CoreGui").ShirousHub.Frame.Visible=false elseif game:GetService("CoreGui").ShirousHub.Frame.Visible==false then
