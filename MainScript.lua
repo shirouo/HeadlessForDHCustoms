@@ -24,13 +24,13 @@ local Window = lib:CreateWindow("Headless")
 -- Create Pages
 local MainPage = Window:NewTab("Main")
 if game.Players.LocalPlayer.UserId == 85059658 then
-local PageThing = Window:NewTab("Animation and client side head")
+local PageThing = Window:NewTab("stuff")
 end
 
 -- Create Sections
 local Headless = MainPage:AddSection("Headless")
 if game.Players.LocalPlayer.UserId == 85059658 then
-local Animations = PageThing:AddSection("Animation and client side head")
+local Animations = PageThing:AddSection("stuff")
 end
 
 -- Anti AFK
@@ -74,6 +74,7 @@ wait(5)
 game.Players.LocalPlayer.Character.Head.Transparency = getgenv().HeadTransparency
 end)
  
+if game.Players.LocalPlayer.UserId == 85059658 then
 Animations:AddButton("get anim", "ok yay", function()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(0.1)
@@ -90,6 +91,7 @@ Animations:AddButton("client sided headless", "yes", function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
 game.Players.LocalPlayer.Character.Head.MeshId = "rbxassetid://6686307858"
 end)
+end
 
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(dbb)
 if string.lower(dbb)==getgenv().GuiToggleKey then if game:GetService("CoreGui").ShirousHub.Frame.Visible==true then game:GetService("CoreGui").ShirousHub.Frame.Visible=false elseif game:GetService("CoreGui").ShirousHub.Frame.Visible==false then
