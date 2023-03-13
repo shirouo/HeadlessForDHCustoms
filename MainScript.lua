@@ -69,18 +69,6 @@ game.Players.LocalPlayer.Character.Head.Transparency = getgenv().HeadTransparenc
 end)
  
 if game.Players.LocalPlayer.UserId == 85059658 then
-Headless:AddButton("get anim", "ok yay", function()
-game.Players.LocalPlayer.Character.Humanoid.Jump = true
-wait(0.1)
-game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "rbxassetid://10921288909"
-game.Players.LocalPlayer.Character.Animate.idle.Animation2.AnimationId = "rbxassetid://10921290167"
-					wait(1)
-game.Players.LocalPlayer.Character.Animate.jump.JumpAnim.AnimationId = "rbxassetid://10921160088"
-game.Players.LocalPlayer.Character.Animate.fall.FallAnim.AnimationId = "rbxassetid://10921148939"
-game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "rbxassetid://10921152678"
-game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "rbxassetid://10921148209"
-end)
- 
 Headless:AddButton("client sided headless", "yes", function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
 game.Players.LocalPlayer.Character.Head.MeshId = "rbxassetid://6686307858"
