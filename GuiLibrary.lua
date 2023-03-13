@@ -7,7 +7,7 @@ local Mouse = LP:GetMouse();
 local TextService = game:GetService("TextService")
 
 local GUI = Instance.new("ScreenGui");
-GUI.Name = "FluxHub";
+GUI.Name = "ShirousHub";
 GUI.Parent = game.CoreGui;
 GUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 GUI.IgnoreGuiInset = true
