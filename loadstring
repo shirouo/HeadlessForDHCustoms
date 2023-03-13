@@ -1,0 +1,8 @@
+getgenv().script_key = "get key from me or just look its rlly easy 😭😭"
+
+------- Settings -------
+
+getgenv().GuiToggleKey = "v" -- The toggle key that hides/unhides the gui!
+getgenv().HeadTransparency = 0 -- 1 Means it is invisible, 0 means it is visible!
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
