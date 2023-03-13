@@ -1,4 +1,8 @@
 if getgenv().script_key == "9Zop0Q9dJRWk1iaD2lEy_SHIROU_fqobu9ZE8VdPPYRWjLiz" then
+ 
+if getgenv().Shirouloaddededededed == true then
+return 
+end
 
 -- Services
 local ReplicatedStorage = game:GetService("ReplicatedStorage");
@@ -66,4 +70,4 @@ end)
 
 game:GetService("Players").LocalPlayer:GetMouse().KeyDown:connect(function(dbb)
 if string.lower(dbb)==getgenv().GuiToggleKey then if game:GetService("CoreGui").ShirousHub.Frame.Visible==true then game:GetService("CoreGui").ShirousHub.Frame.Visible=false elseif game:GetService("CoreGui").ShirousHub.Frame.Visible==false then
-game:GetService("CoreGui").ShirousHub.Frame.Visible=true end end end) end
+game:GetService("CoreGui").ShirousHub.Frame.Visible=true end end end) getgenv().Shirouloaddededededed = true end
