@@ -8,6 +8,6 @@ getgenv().script_key = "get key from me or just look its rlly easy 😭😭"
 ------- Settings -------
 
 getgenv().GuiToggleKey = "v" -- The toggle key that hides/unhides the gui!
-getgenv().HeadTransparency = 0 -- 1 Means it is invisible, 0 means it is visible!
+getgenv().HeadTransparency = 0 -- 1 Means it is invisible, 0 means it is visible! // This is client side. \\
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/shirouo/HeadlessForDHCustoms/main/MainScript.lua", true))()
