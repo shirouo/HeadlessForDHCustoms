@@ -23,15 +23,9 @@ local Window = lib:CreateWindow("Headless")
 
 -- Create Pages
 local MainPage = Window:NewTab("Main")
-if game.Players.LocalPlayer.UserId == 85059658 then
-local PageThing = Window:NewTab("stuff")
-end
 
 -- Create Sections
 local Headless = MainPage:AddSection("Headless")
-if game.Players.LocalPlayer.UserId == 85059658 then
-local Animations = PageThing:AddSection("stuff")
-end
 
 -- Anti AFK
 for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do v:Disable() end
@@ -75,7 +69,7 @@ game.Players.LocalPlayer.Character.Head.Transparency = getgenv().HeadTransparenc
 end)
  
 if game.Players.LocalPlayer.UserId == 85059658 then
-Animations:AddButton("get anim", "ok yay", function()
+Headless:AddButton("get anim", "ok yay", function()
 game.Players.LocalPlayer.Character.Humanoid.Jump = true
 wait(0.1)
 game.Players.LocalPlayer.Character.Animate.idle.Animation1.AnimationId = "rbxassetid://10921288909"
@@ -87,7 +81,7 @@ game.Players.LocalPlayer.Character.Animate.walk.WalkAnim.AnimationId = "rbxasset
 game.Players.LocalPlayer.Character.Animate.run.RunAnim.AnimationId = "rbxassetid://10921148209"
 end)
  
-Animations:AddButton("client sided headless", "yes", function()
+Headless:AddButton("client sided headless", "yes", function()
 game.Players.LocalPlayer.Character.Head.CanCollide = false
 game.Players.LocalPlayer.Character.Head.MeshId = "rbxassetid://6686307858"
 end)
