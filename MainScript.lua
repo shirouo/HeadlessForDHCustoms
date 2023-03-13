@@ -23,13 +23,13 @@ local Window = lib:CreateWindow("Headless")
 
 -- Create Pages
 local MainPage = Window:NewTab("Main")
-if game.Players.LocalPlayer.Name == "e8qt" then
+if game.Players.LocalPlayer.UserId == 85059658 then
 local PageThing = Window:NewTab("Animation and client side head")
 end
 
 -- Create Sections
 local Headless = MainPage:AddSection("Headless")
-if game.Players.LocalPlayer.Name == "e8qt" then
+if game.Players.LocalPlayer.UserId == 85059658 then
 local Animations = PageThing:AddSection("Animation and client side head")
 end
 
